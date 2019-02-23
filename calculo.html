@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>Ejercicio MOCC</title>
+	<script type="text/javascript">
+		function calculo(){
+			var numero = document.getElementById("x");
+			numero.value = Math.pow(numero.value, 3);
+		}
+		function calculo_dos(){
+			var numero = document.getElementById("x");
+			numero.value = Math.pow(numero.value, 4);			
+		}
+	</script>
+</head>
+<body>
+	<input type="number" id="x">
+	<input type="button" name="boton" value="Calcular" onclick="calculo();">
+	<input type="button" name="boton2" value="x^4" onclick="calculo_dos();">
+</body>
+</html>
