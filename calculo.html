@@ -6,11 +6,15 @@
 			var numero = document.getElementById("x");
 			numero.value = Math.pow(numero.value, 3);
 		}
+		function calculo_sin(){
+			var numero = document.getElementById("x");
+			numero.value = Math.sin(numero.value);
+		}
 	</script>
 </head>
 <body>
-	<input type="number" id="x">
+	<input type="number" id="x" step="any"/>
 	<input type="button" name="boton" value="Calcular" onclick="calculo();">
-
+	<input type="button" name="boton2" value="sin(x)" onclick="calculo_sin();">
 </body>
 </html>
